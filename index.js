@@ -46,10 +46,15 @@ client.on('ready', () => {
             msg.reply("NONONONONONOOOOO");
             connection.play('mike_no.mp3', { volume: 0.5 });
           }
+          else if (msg.content === "Evelyn going wah") {
+            msg.reply("WAH");
+            connection.play('evelyn_wah.mp3', { volume: 0.5 });
+          } 
           else if (msg.content === "BAH BOT stop;") {
             msg.reply("Service Stop");
             channel.leave();
           } 
+          //evelyn_wah
         });
       }).catch(e => {
         console.error(e);
