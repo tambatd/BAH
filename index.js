@@ -19,6 +19,10 @@ client.on('ready', () => {
         msg.reply("NONONONONONOOOOO");
         connection.play('mike_no.mp3', { volume: 0.5 });
       }
+      else if (msg.content === "Nate 1") {
+        msg.reply("HONK");
+        connection.play('honk2.wav', { volume: 0.5 });
+      }
       else if (msg.content === "BAH BOT stop;") {
         msg.reply("Service Stop");
 
